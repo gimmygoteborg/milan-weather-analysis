@@ -42,7 +42,7 @@ fig_total_precipitation = plot_total_precipitation(precipitation_data, 70.4)
 
 # Generate figures for different daily rain thresholds
 figures = []
-for threshold in [1, 5, 10]:
+for threshold in [1, 10]:
     fig_rainy_days = plot_rainy_days(precipitation_data, threshold, 9.4)
     # historical avg source: https://en.wikipedia.org/wiki/Template:Milan_weatherbox
     title = f'Rainy Days Comparison (Threshold: {threshold} mm)'
