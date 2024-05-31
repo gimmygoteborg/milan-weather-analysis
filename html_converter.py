@@ -18,6 +18,10 @@ def html_converter(fig_total_precipitation, fig_daily_max_precipitation, figures
         file.write('<title>Milan Linate Airport Historical Rainfall</title>\n')
         file.write('</head>\n<body>\n')
         file.write('<h1>Milan Linate Airport Rainfall Collection Historical Data</h1>\n')
+        
+        # Add the source information
+        file.write('<p>Historical avg: <a href="https://en.wikipedia.org/wiki/Template:Milan_weatherbox">Milan Weatherbox</a></p>\n')
+        file.write('<p>Historical data: <a href="https://www.3bmeteo.com/meteo/milano+linate/storico/201905">Milan Linate historical data from 3bmeteo</a></p>\n')
 
         file.write('<h2>Month of May: Total Precipitation Comparison</h2>\n')
         file.write('<img src="total_precipitation.png" alt="Total Precipitation">\n')
